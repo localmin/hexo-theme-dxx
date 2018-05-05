@@ -5,6 +5,7 @@
  * https://github.com/addywaddy/jquery.tagcloud.js
  * created by Adam Groves
  */
+
 (function($) {
 
   /*global jQuery*/
