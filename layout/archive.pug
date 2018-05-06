@@ -5,7 +5,7 @@ block content
     section#wrapper.home
 
         div.archive
-            h3!='yo yo yo yo ... baby...'
+            h3!='~yeah~baby~'
             each item in site.posts.sort('date', -1).toArray()
               - var postTitle = item.title || 'No Title'
               - var createDate = date(item.date, 'MMM DD')
