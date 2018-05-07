@@ -6,7 +6,7 @@ meta(name='viewport', content='width=device-width, initial-scale=1')
 if config.googleVerification
     meta(name='google-site-verification' content=config.googleVerification)
 title= pageTitle
-link(rel="shortcut icon", href='/images/avatar.png')
-link(rel='stylesheet', href='/css/style.min.css')
-link(rel='stylesheet', href='/css/highlight.min.css')
-link(rel='stylesheet', href='/css/font-awesome.min.css')
+link(rel="shortcut icon", href=url_for('/images/avatar.png'))
+link(rel='stylesheet', href=url_for('/css/style.min.css'))
+link(rel='stylesheet', href=url_for('/css/highlight.min.css'))
+link(rel='stylesheet', href=url_for('/css/font-awesome.min.css'))
