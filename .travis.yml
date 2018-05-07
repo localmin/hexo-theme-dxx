@@ -1,0 +1,30 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo clean
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "fuzhouxxdong"
+  - git config user.email "fuzhouxxdong@gmail.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${ghp_token}@${GH_REF}" gh-pages:gh-pages
+# E: Build LifeCycle
+
+branches:
+  only:
+    - demo
+env:
+ global:
+   - GH_REF: github.com/fuzhouxxdong/hexo-theme-dxx.git
