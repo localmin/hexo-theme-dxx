@@ -4,6 +4,7 @@ node_js: stable
 # S: Build Lifecycle
 install:
   - npm install
+  - npm i -g angular-cli-ghpages
 
 #before_script:
  # - npm install -g gulp
@@ -13,13 +14,14 @@ script:
   - hexo g
 
 after_script:
-  - cd ./public
-  - git init
-  - git config user.name "fuzhouxxdong"
-  - git config user.email "fuzhouxxdong@gmail.com"
-  - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${ghp_token}@${GH_REF}" gh-pages:gh-pages
+  #- cd ./public
+  #- git init
+  #- git config user.name "fuzhouxxdong"
+  #- git config user.email "fuzhouxxdong@gmail.com"
+  #- git add .
+  #- git commit -m "Update docs"
+  #- git push --force --quiet "https://${ghp_token}@${GH_REF}" gh-pages:gh-pages
+  - ngh --repo https://ghp_token@github.com/fuzhouxxdong/hexo-theme-dxx.git --name fuzhouxxdong --email fuzhouxxdong@gmail.com -S true --dir public
 # E: Build LifeCycle
 
 branches:
