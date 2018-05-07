@@ -1,0 +1,3 @@
+[submodule "themes/dxx"]
+	path = themes/dxx
+	url = https://github.com/fuzhouxxdong/hexo-theme-dxx.git
