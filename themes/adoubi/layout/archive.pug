@@ -1,0 +1,17 @@
+extends includes/layout
+
+block content
+
+    div.archive
+      each post in site.posts.sort('date', -1).toArray()
+        .archive-item
+          div
+            if post.link
+                a.archive-item__link(href=url_for(post.link) target="_blank")
+                  span.archive-item__link__time(datetime=date_xml(post.date))= date(post.date)
+                  span.archive-item__link__title=post.title || 'No Title'
+            else
+                a.archive-item__link(href=url_for(post.path))
+                  span.archive-item__link__time(datetime=date_xml(post.date))= date(post.date)
+                  span.archive-item__link__title=post.title || 'No Title'
+

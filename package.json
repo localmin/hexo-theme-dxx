@@ -1,0 +1,48 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "hexo": {
+    "version": "3.6.0"
+  },
+  "scripts": {
+    "d": "hexo clean && hexo g && gulp && hexo d",
+    "s": "hexo clean && hexo g && gulp && hexo s",
+    "nghd": "ngh --repo https://github-token-for-deploy-webapp@github.com/fuzhouxxdong/hexo-theme-dxx.git --name fuzhouxxdong --email fuzhouxxdong@gmail.com -S true --dir public"
+  },
+  "dependencies": {
+    "hexo": "^3.6.0",
+    "hexo-deployer-git": "^0.3.0",
+    "hexo-generator-archive": "^0.1.5",
+    "hexo-generator-baidu-sitemap": "^0.1.2",
+    "hexo-generator-category": "^0.1.3",
+    "hexo-generator-feed": "^1.2.0",
+    "hexo-generator-index": "^0.2.0",
+    "hexo-generator-searchdb": "^1.0.7",
+    "hexo-generator-sitemap": "^1.2.0",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-pagination": "^0.1.0",
+    "hexo-renderer-ejs": "^0.2.0",
+    "hexo-renderer-markdown-it": "^3.4.1",
+    "hexo-renderer-marked": "^0.2.10",
+    "hexo-renderer-pug": "0.0.5",
+    "hexo-renderer-sass": "^0.3.1",
+    "hexo-renderer-scss": "^1.2.0",
+    "hexo-renderer-stylus": "^0.3.1",
+    "hexo-server": "^0.2.0",
+    "hexo-wordcount": "^3.0.2",
+    "markdown-it-emoji": "^1.3.0",
+    "node-sass": "^4.8.3",
+    "twemoji": "^2.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-ignore": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
