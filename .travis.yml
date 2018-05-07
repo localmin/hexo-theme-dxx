@@ -21,7 +21,7 @@ after_script:
   #- git add .
   #- git commit -m "Update docs"
   #- git push --force --quiet "https://${ghp_token}@${GH_REF}" gh-pages:gh-pages
-  - ngh --repo https://ghp_token@github.com/fuzhouxxdong/hexo-theme-dxx.git --name fuzhouxxdong --email fuzhouxxdong@gmail.com -S true --dir public
+  - ngh --repo https://${ghp_token}@github.com/fuzhouxxdong/hexo-theme-dxx.git --name fuzhouxxdong --email fuzhouxxdong@gmail.com -S true --dir public
 # E: Build LifeCycle
 
 branches:
