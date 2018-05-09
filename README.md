@@ -4,7 +4,7 @@
 
 ## Live Preview
 
-[demo](https://shakalaka.xyz) 
+[demo](https://shakalaka.xyz/hexo-theme-dxx/) 
 
 ## Installation
 
