@@ -6,6 +6,7 @@
     "version": "3.6.0"
   },
   "scripts": {
+    "dev": "hexo clean && hexo g && hexo s",
     "d": "hexo clean && hexo g && gulp && hexo d",
     "s": "hexo clean && hexo g && gulp && hexo s",
     "nghd": "ngh --repo https://github-token-for-deploy-webapp@github.com/fuzhouxxdong/hexo-theme-dxx.git --name fuzhouxxdong --email fuzhouxxdong@gmail.com -S true --dir public"
