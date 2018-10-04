@@ -6,7 +6,7 @@ block content
         article
             header
                 h1!=page.title
-                h2.headline!=date(page.date, 'MMM DD, YYYY h:mm')
+                h2.headline!=date(page.date, 'YYYY MMM DD, h:mm')
                     |·
                     |#{wordcount(page.content)} words
                     |·

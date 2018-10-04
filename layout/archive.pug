@@ -5,11 +5,13 @@ block content
     section#wrapper.home
 
         div.archive
-            h3!='~yeah~baby~'
-            each item in site.posts.sort('date', -1).toArray()
-              - var postTitle = item.title || 'No Title'
-              - var createDate = date(item.date, 'MMM DD')
-              ul
+
+            each posts, year in _.groupBy(site.posts.sort('date', -1).toArray(), function(p){return -p.date.format('YYYY')})
+              h5=-year
+              for item in posts
+                - var postTitle = item.title || 'No Title'
+                - var createDate = date(item.date, 'MM-DD')
+                ul
                   div.post-item
                       div.post-time=createDate
                       if item.link

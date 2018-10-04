@@ -6,7 +6,7 @@ block content
         ul#post-list
             each item in page.posts.sort('date', -1).toArray()
                 - var postTitle = item.title || 'No Title'
-                - var createDate = date(item.date, 'MMM DD')
+                - var createDate = date(item.date, 'YYYY-MMM-DD')
                 li
                     aside.dates=createDate
                     if item.link

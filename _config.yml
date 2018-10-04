@@ -5,10 +5,13 @@ Home: /
 Archives: /archives
 About: /about
 
+
 language: en
 
-author: fuzhouxx Dong
-description: good good study day day up
+author: localmin 
+description: localmin's blog
+
+favicon: /images/favicon.ico
 
 disqus:
   enable: false
@@ -16,3 +19,4 @@ disqus:
 
 google_site_verification:
 google_analytics:
+
