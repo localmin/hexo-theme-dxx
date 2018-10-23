@@ -1,10 +1,10 @@
-# hexo-theme-dxx
+# hexo-theme-lxx
 
-base on [hugo-theme-cactus-plus](https://github.com/nodejh/hugo-theme-cactus-plus)
+This hexo theme is base on [hugo-theme-cactus-dxx](https://github.com/fuzhouxxdong/hexo-theme-dxx) for my use.
 
 ## Live Preview
 
-[demo](https://fuzhouxxdong.github.io/hexo-theme-dxx/) 
+[demo(my blog)](https://localmin.github.io/) 
 
 ## Installation
 
@@ -15,11 +15,11 @@ plugin dependencies:
 
 clone theme
 
-    git clone https://github.com/fuzhouxxdong/hexo-theme-dxx.git themes/dxx
+    git clone git@github.com:localmin/hexo-theme-lxx.git themes/lxx
 
 upgrade
 
-    cd themes/dxx
+    cd themes/lxx
     git pull origin master
 
 ## License
