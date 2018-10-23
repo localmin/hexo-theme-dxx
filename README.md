@@ -1,6 +1,6 @@
 # hexo-theme-lxx
 
-This hexo theme is base on [hugo-theme-cactus-dxx](https://github.com/fuzhouxxdong/hexo-theme-dxx) for my use.
+This hexo theme is base on [huxo-theme-dxx](https://github.com/fuzhouxxdong/hexo-theme-dxx) for my use.
 
 ## Live Preview
 
